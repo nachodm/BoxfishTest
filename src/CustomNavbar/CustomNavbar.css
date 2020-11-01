@@ -1,0 +1,110 @@
+.App-logo {
+  height: 50px;
+  align-self: center;
+  padding: 4px;
+}
+
+.Company-Name {
+  height: 100%; 
+  align-self: center;
+  margin-right: 1.25rem;
+  padding: 4px;
+}
+ 
+.header {
+    top: 0;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 6px 5%;
+}
+
+.flex-grow {
+  flex-grow: 2;
+  text-align: left;
+}
+
+.header div {
+  display: block;
+}
+
+.left {
+ margin-left: 4vw;
+}
+
+.right {
+  margin-right: 4vw;
+}
+
+.hamburger-menu {
+  display: none !important;
+  color: #4081FF
+}
+
+@media screen and (max-width:880px) {
+  .header {
+    position: relative;
+  }
+  .collapsed {
+    display: none !important;
+  }
+  .hamburger-menu {
+    display: block !important;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .Company-Name {
+    display: none;
+  }
+
+  .header {
+    border-bottom: none;
+  }
+
+  .flex-grow {
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    height: 5vh;
+    top: 11vh;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    width: 100vh !important;
+    text-align: center;
+  }
+
+  .active {
+    position: absolute;
+    left: 0;
+    top: 16vh;
+    margin-top: 1px;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100vh !important;
+    background-color: white;
+    text-align: center;
+  }
+  .App-link:hover {
+    color: white;
+    background-color: #4081FF;
+    opacity: 0.85;
+    transition-duration: 250ms;
+  }
+}
+
+@media screen and (min-width:880px) {
+  
+  .hamburger-menu {
+    display: none !important;
+  }
+}

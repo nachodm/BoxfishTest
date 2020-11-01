@@ -1,0 +1,12 @@
+.App-link {
+    color: #4081FF;
+    font-weight: 500;
+    size: 14px;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.App-link:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
