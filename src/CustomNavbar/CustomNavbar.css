@@ -56,6 +56,17 @@
     display: block !important;
   }
 
+  .fa-times {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .fa-bars{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(180deg);
+  }
+
   .header {
     justify-content: space-between;
   }
@@ -79,7 +90,7 @@
     display: flex !important;
     flex-direction: row !important;
     justify-content: center;
-    width: 100vh !important;
+    width: 100%;
     text-align: center;
   }
 
@@ -90,9 +101,11 @@
     margin-top: 1px;
     display: flex !important;
     flex-direction: column !important;
-    width: 100vh !important;
+    width: 100%;
     background-color: white;
     text-align: center;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
   }
   .App-link:hover {
     color: white;
